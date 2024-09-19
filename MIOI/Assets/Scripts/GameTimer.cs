@@ -11,12 +11,13 @@ public class GameTimer : MonoBehaviour
     private float currentTime;
 
     public TMP_Text timerText;
+    public GameObject loseScreen;
     private bool hasFinished = false;
 
     void Start()
     {
         currentTime = startTime;
-
+        loseScreen.SetActive(false);
         if (timerText == null) 
         {
             Debug.LogError("TimerText is niet toegewezen in de inspector!");
@@ -49,6 +50,8 @@ public class GameTimer : MonoBehaviour
     void EndGame()
     {
         Debug.Log("Tijd is op! Het Spel Stopt.");
+        hasFinished = true;
+        loseScreen.SetActive(true);
         Time.timeScale = 0f;
     }
 
