@@ -14,12 +14,12 @@ Zo kunnen ze meer spelers krijgen die ook een aandoening/handicap hebben.
 Ik ben het er ook mee eens en vindt het ook leuk als mensen met een handicap ook games kunnen spelen.
 
 Opdracht 3: 
-![The Last of Us 2 Accessibility Video](https://www.youtube.com/watch?v=GHN5v3NJ9ko)
+[The Last of Us 2 Accessibility Video](https://www.youtube.com/watch?v=GHN5v3NJ9ko)
 Dit filmpje laat zien hoe je de features aanzet en wat het doet.
 Deze features maken het makkelijker voor mensen om het spel te kunnen spelen als je bijvoorbeeld Slechtziend bent.
 
 Opdracht 4: 
-![The Last of Us 2 New game+](https://www.youtube.com/watch?v=TT10Alu9Xp0)
+[The Last of Us 2 New game+](https://www.youtube.com/watch?v=TT10Alu9Xp0)
 Dit filmpje laat zien wat nieuw game+ is in The Last of Us en wat het doet.
 Deze feature is als je het spel opnieuw wilt spelen om alle Upgrades te kunnen halen zodat je uitrusting compleet kan maken.
 
