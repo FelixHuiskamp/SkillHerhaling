@@ -21,16 +21,30 @@ public class CharacterMovement : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        bool isSprinting = Input.GetKey(KeyCode.Space);
+
+        if (isSprinting)
         {
             currentSpeed = Mathf.Lerp(currentSpeed, sprintSpeed, acceleration * Time.deltaTime);
         }
         else
         {
-            currentSpeed = Mathf.Lerp(currentSpeed, normalSpeed, deceleration * Time.deltaTime);
+            currentSpeed = Mathf.Lerp(currentSpeed, 0, deceleration * Time.deltaTime);
         }
 
-        transform.Translate(Vector3.forward * currentSpeed * Time.deltaTime);
+        if (currentSpeed < 0.1f) 
+        {
+            currentSpeed = 0f;
+        }
+
+
+        if (currentSpeed > 0f) 
+        { 
+            transform.Translate(Vector3.forward * currentSpeed *  Time.deltaTime);
+        } 
+
+        Debug.Log(currentSpeed);
+        
 
         if (animator != null) 
         { 

@@ -166,10 +166,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96532b6a7b9d96540ac7a6302292f7f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalSpeed: 0.5
+  normalSpeed: 0
   sprintSpeed: 6
   acceleration: 5
-  deceleration: 0.5
+  deceleration: 4
 --- !u!54 &152858207
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1301,7 +1301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47b9678c252cf36479ba63106e338f44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTime: 15
+  startTime: 10
   animator: {fileID: 152858205}
   timerText: {fileID: 493390584}
   loseScreen: {fileID: 516616702}
