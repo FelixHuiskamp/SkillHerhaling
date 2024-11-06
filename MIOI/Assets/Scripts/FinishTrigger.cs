@@ -7,12 +7,13 @@ public class FinishTrigger : MonoBehaviour
 {
     public GameTimer gameTimer;
     public GameObject finishUI;
+    public Animator animator;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player")) 
         {
-            Debug.Log("Finish Bereikt!!");
-            Time.timeScale = 0f;
+            animator.Play("Victory");
+            Time.timeScale = 1f;
             finishUI.SetActive(true);
             gameTimer.FinishGame();
         }

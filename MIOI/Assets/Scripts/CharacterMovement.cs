@@ -6,7 +6,7 @@ public class CharacterMovement : MonoBehaviour
 {
     public float normalSpeed = 2.0f;
     public float sprintSpeed = 6.0f;
-    public float acceleration = 5.0f;
+    public float acceleration = 1.0f;
     public float deceleration = 0.05f;
 
     private float currentSpeed; 
@@ -23,15 +23,11 @@ public class CharacterMovement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            currentSpeed += acceleration;
+            currentSpeed = Mathf.Lerp(currentSpeed, sprintSpeed, acceleration * Time.deltaTime);
         }
-
-        else if (currentSpeed >= deceleration)
+        else
         {
-            currentSpeed -= deceleration;
-        }
-        else {
-            currentSpeed = 0;
+            currentSpeed = Mathf.Lerp(currentSpeed, normalSpeed, deceleration * Time.deltaTime);
         }
 
         transform.Translate(Vector3.forward * currentSpeed * Time.deltaTime);

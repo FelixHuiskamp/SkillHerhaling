@@ -166,10 +166,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96532b6a7b9d96540ac7a6302292f7f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  normalSpeed: 2
+  normalSpeed: 0.5
   sprintSpeed: 6
-  acceleration: 10
-  deceleration: 2
+  acceleration: 5
+  deceleration: 0.5
 --- !u!54 &152858207
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1302,6 +1302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startTime: 15
+  animator: {fileID: 152858205}
   timerText: {fileID: 493390584}
   loseScreen: {fileID: 516616702}
 --- !u!4 &1241328972
@@ -1416,8 +1417,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2f30e354bc35b547b33f767ae3d5751, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameTimer: {fileID: 0}
+  gameTimer: {fileID: 1241328971}
   finishUI: {fileID: 2068872884}
+  animator: {fileID: 152858205}
 --- !u!65 &1402874576
 BoxCollider:
   m_ObjectHideFlags: 0
